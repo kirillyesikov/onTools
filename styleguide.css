@@ -1,0 +1,45 @@
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --text: rgba(24, 26, 24, 1);
+    --bg: rgba(242, 240, 242, 1);
+    --desktop-h1-font-family: "Lato", Helvetica;
+    --desktop-h1-font-weight: 700;
+    --desktop-h1-font-size: 52px;
+    --desktop-h1-letter-spacing: 0px;
+    --desktop-h1-line-height: 60px;
+    --desktop-h1-font-style: normal;
+    --desktop-subtitle-font-family: "Lato", Helvetica;
+    --desktop-subtitle-font-weight: 400;
+    --desktop-subtitle-font-size: 18px;
+    --desktop-subtitle-letter-spacing: 0px;
+    --desktop-subtitle-line-height: 24px;
+    --desktop-subtitle-font-style: normal;
+    --desktop-subtitle-bold-font-family: "Lato", Helvetica;
+    --desktop-subtitle-bold-font-weight: 700;
+    --desktop-subtitle-bold-font-size: 18px;
+    --desktop-subtitle-bold-letter-spacing: 0px;
+    --desktop-subtitle-bold-line-height: 24px;
+    --desktop-subtitle-bold-font-style: normal;
+    --desktop-h2-font-family: "Lato", Helvetica;
+    --desktop-h2-font-weight: 700;
+    --desktop-h2-font-size: 48px;
+    --desktop-h2-letter-spacing: 0px;
+    --desktop-h2-line-height: 54px;
+    --desktop-h2-font-style: normal;
+    --desktop-h4-font-family: "Lato", Helvetica;
+    --desktop-h4-font-weight: 700;
+    --desktop-h4-font-size: 24px;
+    --desktop-h4-letter-spacing: 0px;
+    --desktop-h4-line-height: 32px;
+    --desktop-h4-font-style: normal;
+    --desktop-text-regular-font-family: "Lato", Helvetica;
+    --desktop-text-regular-font-weight: 400;
+    --desktop-text-regular-font-size: 16px;
+    --desktop-text-regular-letter-spacing: 0px;
+    --desktop-text-regular-line-height: 20px;
+    --desktop-text-regular-font-style: normal;
+  }
+
+  
+
+  
