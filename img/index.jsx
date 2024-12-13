@@ -1,9 +1,9 @@
 import React from "react";
-import { Arr } from "../Arr/Arr";
+import { Arr } from "../Arr.jsx";
 import { HstNumberWillNotBeRequiredAtThisMomentButWillBeNeededToStartWorkingThroughOurAgency } from "../HstNumberWillNotBeRequiredAtThisMomentButWillBeNeededToStartWorkingThroughOurAgency/HstNumberWillNotBeRequiredAtThisMomentButWillBeNeededToStartWorkingThroughOurAgency";
-import { IconComponentNode } from "../IconComponentNode/IconComponentNode";
-import { Logo } from "../Logo/Logo";
-import { Vector } from "../Vector/Vector";
+import { IconComponentNode } from "../componentnode.jsx";
+import { Logo } from "../logo.jsx";
+import { Vector } from "../vector.jsx";
 import "./style.css";
 
 export const WorkerTeamAccount = () => {

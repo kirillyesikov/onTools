@@ -1,67 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="globals.css" />
-  <link rel="stylesheet" href="styleguide.css" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Error</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .LOGIN-ERROR {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .overlap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .the-future-is {
+      flex: 1 1 300px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .headile-subtitle {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .headile-subtitle .text-wrapper {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .darn-user-ID-and {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .button-search, .button {
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .input, .input-components-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .forgot-ID-forgot {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    footer {
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    footer .icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .the-future-is {
+        flex: 1 1 100%;
+      }
+
+      .headile-subtitle {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+
+      .menu-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .menu {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text-wrapper-3, .text-wrapper-4 {
+        font-size: 0.9em;
+      }
+
+      .headile-subtitle {
+        font-size: 0.8em;
+      }
+
+      footer {
+        font-size: 0.9em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="login-error-page">
-    <header>
-      <img class="logo" src="img/logo.svg" alt="Ontools Logo" />
-    </header>
-
-    <main>
-      <div class="error-container">
-        <div role="alert" class="error-message">
-          <h1>Login Error</h1>
-          <p>Darn! User ID and Password don’t match. Please try again.</p>
-          <p>You have 3 attempts total. If the problem persists, <a href="/contact">contact us</a>.</p>
-          <p>We are sorry for any inconvenience.</p>
+  <div class="LOGIN-ERROR">
+    <div class="div">
+      <div class="overlap">
+        <!-- Repeatable Images Section -->
+        <div class="the-future-is">
+          <div class="element"></div>
+          <img class="image" src="img/image-16.png" alt="Illustration">
+        </div>
+        <div class="the-future-is">
+          <div class="element"></div>
+          <img class="image" src="img/image-16.png" alt="Illustration">
+        </div>
+        <div class="the-future-is">
+          <div class="element"></div>
+          <img class="image" src="img/image-16.png" alt="Illustration">
         </div>
 
-        <div class="login-form">
-          <div class="input-group">
-            <label for="user-id">User ID</label>
-            <input type="text" id="user-id" placeholder="Enter your User ID" />
-          </div>
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your Password" />
-          </div>
-          <div class="actions">
-            <button onclick="goBack()" class="btn-back">GO BACK</button>
-            <button onclick="continueLogin()" class="btn-continue">CONTINUE</button>
-          </div>
-          <div class="forgot-links">
-            <a href="/forgot-id">Forgot ID?</a> | <a href="/forgot-password">Forgot Password?</a>
-          </div>
+        <!-- Login Message Section -->
+        <div class="headile-subtitle">
+          <div class="text-wrapper">Login</div>
+          <p class="darn-user-ID-and">
+            Darn! User ID and Password don’t match, please try again. You have 3 attempts total. If the problem persists, 
+            <a href="#">contact us</a>. We are sorry for the inconvenience.
+          </p>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <ul class="footer-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about-us">About Us</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
-      </ul>
-      <p>© 2022 Ontools Inc. All rights reserved. Email: <a href="mailto:info@ontoolsapp.com">info@ontoolsapp.com</a>.</p>
-    </footer>
+      <!-- Buttons -->
+      <div class="button-search">GO BACK</div>
+      <button class="button">CONTINUE</button>
+
+      <!-- Input Fields -->
+      <div class="input">
+        <label for="user-id">User ID</label>
+        <input id="user-id" type="text" placeholder="Enter User ID">
+      </div>
+      <div class="input">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter Password">
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="icons-copyright">
+          <p>Info@Ontoolsapp.com</p>
+          <p>© 2022 Ontools Inc.</p>
+        </div>
+        <div class="icons">
+          <img class="img-2" src="img/eva-linkedin-fillloginerror.svg" alt="LinkedIn">
+          <img class="img-2" src="img/eva-facebook-fillloginerror.svg" alt="Facebook">
+          <img class="img-2" src="img/eva-twitter-fillloginerror.svg" alt="Twitter">
+        </div>
+        <div class="menu">
+          <div><strong>Company</strong>: Home, About Us, Contact</div>
+          <div><strong>Guests</strong>: FAQ, Careers</div>
+          <div><strong>Privacy</strong>: Terms, Policy</div>
+        </div>
+      </footer>
+    </div>
   </div>
-
-  <script>
-    function goBack() {
-      window.history.back();
-    }
-
-    function continueLogin() {
-      // Add login logic here
-    }
-  </script>
 </body>
 </html>
