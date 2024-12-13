@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Login Error</title>
+</head>
+<body>
+  <div class="login-error-page">
+    <header>
+      <img class="logo" src="img/logo.svg" alt="Ontools Logo" />
+    </header>
+
+    <main>
+      <div class="error-container">
+        <div role="alert" class="error-message">
+          <h1>Login Error</h1>
+          <p>Darn! User ID and Password don’t match. Please try again.</p>
+          <p>You have 3 attempts total. If the problem persists, <a href="/contact">contact us</a>.</p>
+          <p>We are sorry for any inconvenience.</p>
+        </div>
+
+        <div class="login-form">
+          <div class="input-group">
+            <label for="user-id">User ID</label>
+            <input type="text" id="user-id" placeholder="Enter your User ID" />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password" />
+          </div>
+          <div class="actions">
+            <button onclick="goBack()" class="btn-back">GO BACK</button>
+            <button onclick="continueLogin()" class="btn-continue">CONTINUE</button>
+          </div>
+          <div class="forgot-links">
+            <a href="/forgot-id">Forgot ID?</a> | <a href="/forgot-password">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+      </ul>
+      <p>© 2022 Ontools Inc. All rights reserved. Email: <a href="mailto:info@ontoolsapp.com">info@ontoolsapp.com</a>.</p>
+    </footer>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function continueLogin() {
+      // Add login logic here
+    }
+  </script>
+</body>
+</html>
